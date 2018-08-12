@@ -5,8 +5,8 @@
  -----------------------------------
  
  ### 1.参考链接
-        https://www.cnblogs.com/ysocean/p/6889906.html#_label1    
-        
+        https://www.cnblogs.com/ysocean/p/6889906.html#_label1
+                   
  ### 2.知识点：(example：JunitTest.java)
      　  1.@Test: 测试方法
      　　　　a)(expected=XXException.class)如果程序的异常和XXException.class一样，则测试通过
