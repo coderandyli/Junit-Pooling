@@ -12,15 +12,15 @@ import org.junit.Test;
  */
 
 /**
- * 运行JunitTest结果
- * -------- @BeforeClass --------
- * -------- @Before --------
- * -------- test1 --------
- * -------- testAfter --------
- * -------- @Before --------
- * -------- test2 --------
- * -------- testAfter --------
- * -------- @AfterClass --------
+ * 执行JunitTest结果
+ *  -------- @BeforeClass --------
+ *  -------- @Before --------
+ *  -------- test1 --------
+ *  -------- @After --------
+ *  -------- @Before --------
+ *  -------- test2 --------
+ *  -------- @After --------
+ *  -------- @AfterClass --------
  *
  */
 public class JunitTest {
@@ -31,28 +31,28 @@ public class JunitTest {
     }
 
     @Before
-    public void testBefore(){
+    public void setUp() throws Exception {
         System.out.println("-------- @Before --------");
     }
 
     @Test
-    public void test1(){
+    public void testMethod1(){
         System.out.println("-------- test1 --------");
     }
 
     @Test
-    public void test2(){
+    public void testMethod2(){
         System.out.println("-------- test2 --------");
     }
 
     @Ignore
-    public void ignore(){
+    public void testIgnore(){
         System.out.println("-------- @Ignore --------");
     }
 
     @After
-    public void testAfter(){
-        System.out.println("-------- testAfter --------");
+    public void tearDown() throws Exception {
+        System.out.println("-------- @After --------");
     }
 
     @AfterClass

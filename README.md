@@ -8,19 +8,19 @@
         https://www.cnblogs.com/ysocean/p/6889906.html#_label1
                    
  ### 2.知识点：(example：JunitTest.java)
-     　  1.@Test: 测试方法
+     　  1、@Test: 测试方法
      　　　　a)(expected=XXException.class)如果程序的异常和XXException.class一样，则测试通过
      　　　　b)(timeout=100)如果程序的执行能在100毫秒之内完成，则测试通过
      
-     　　2.@Ignore: 被忽略的测试方法：加上之后，暂时不运行此段代码
+     　　2、@Ignore: 被忽略的测试方法：加上之后，暂时不运行此段代码
      
-     　　3.@Before: 每一个测试方法之前运行
+     　　3、@Before: 每一个测试方法之前运行（setUp方法显示测试前初始化的工作）
+                   
+     　　4、@After: 每一个测试方法之后运行（tearDown：主要完成测试完之后的垃圾回收等工作）
      
-     　　4.@After: 每一个测试方法之后运行
+     　　5、@BeforeClass: 方法必须必须要是静态方法（static 声明），会在所有测试方法执行之前执行
      
-     　　5.@BeforeClass: 方法必须必须要是静态方法（static 声明），所有测试开始之前运行，注意区分before，是所有测试方法
-     
-     　　6.@AfterClass: 方法必须要是静态方法（static 声明），所有测试结束之后运行，注意区分 @After
+     　　6、@AfterClass: 方法必须要是静态方法（static 声明），所有测试结束之后执行
      
 ### 3.编写测试类的原则(example：JunitTest.java)
      
