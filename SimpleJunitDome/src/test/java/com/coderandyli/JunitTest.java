@@ -13,14 +13,15 @@ import org.junit.Test;
 
 /**
  * 执行JunitTest结果
- *  -------- @BeforeClass --------
- *  -------- @Before --------
- *  -------- test1 --------
- *  -------- @After --------
- *  -------- @Before --------
- *  -------- test2 --------
- *  -------- @After --------
- *  -------- @AfterClass --------
+ *
+ * -------- @BeforeClass --------
+ * -------- @Before --------
+ * -------- testMethod1 --------
+ * -------- @After --------
+ * -------- @Before --------
+ * -------- testMethod2 --------
+ * -------- @After --------
+ * -------- @AfterClass --------
  *
  */
 public class JunitTest {
@@ -37,12 +38,12 @@ public class JunitTest {
 
     @Test
     public void testMethod1(){
-        System.out.println("-------- test1 --------");
+        System.out.println("-------- testMethod1 --------");
     }
 
     @Test
     public void testMethod2(){
-        System.out.println("-------- test2 --------");
+        System.out.println("-------- testMethod2 --------");
     }
 
     @Ignore
