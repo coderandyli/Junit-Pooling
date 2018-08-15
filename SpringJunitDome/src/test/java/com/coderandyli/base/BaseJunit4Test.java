@@ -11,7 +11,7 @@ import org.springframework.test.context.junit4.SpringRunner;
  */
 
 //SpringRunner 与 SpringJUnit4ClassRunner 有区别吗？
-//  SpringRunner is an alias for the SpringJUnit4ClassRunner.（//  link：https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringRunner.html）
+//  SpringRunner is an alias for the SpringJUnit4ClassRunner.（// link：https://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/test/context/junit4/SpringRunner.html）
 @RunWith(SpringRunner.class)
 @ContextConfiguration(locations = "/applicationContext.xml") // 加载配置文件
 //@RunWith(SpringJUnit4ClassRunner.class) // 使用Junit4
@@ -22,4 +22,5 @@ import org.springframework.test.context.junit4.SpringRunner;
 //@TransactionConfiguration(transactionManager = "transactionManager", defaultRollback = true)
 //------------
 public class BaseJunit4Test {
+    
 }
